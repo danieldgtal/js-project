@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/all.css" />
+    <title>Currency Pair Calculator</title>
+    <style>
+      .form-control {
+        border-radius: 20px;
+      }
+      .btn {
+        border-radius: 20px;
+        width: 12rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-6 mx-auto border border-primary">
+          <div class="calculator-body">
+            <h2 class="text-center" id="heading">Currency Converter</h2>
+
+            <form action="">
+              <div class="row">
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="base currency">Base Currency: </label>
+                    <div class="form-group">
+                      <select class="form-control" id="baseCurrency">
+                        <option value="none" selected>Choose...</option>
+                        <option value="usd">USD</option>
+                        <option value="ngn">NGN</option>
+                        <option value="eur">EUR</option>
+                        <option value="cad">CAD</option>
+                        <option value="gbp">GBP</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="base currency">Quote Currency: </label>
+                    <div class="form-group">
+                      <select class="form-control" id="quoteCurrency">
+                        <option value="none" selected>Choose...</option>
+                        <option value="usd">USD</option>
+                        <option value="ngn">NGN</option>
+                        <option value="eur">EUR</option>
+                        <option value="cad">CAD</option>
+                        <option value="gbp">GBP</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="form-group">
+                    <label for="base currency">Input Value </label>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        id="inputValue"
+                        class="form-control"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="base currency">Result</label>
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        id="result"
+                        class="form-control"
+                        disabled
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-center">
+                <button type="button" class="btn btn-primary mr-2" id="submit">
+                  Calculate
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-warning reset mr-2"
+                  id="reset"
+                >
+                  reset
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bootstrap js -->
+      <script src="./assets/js/jquery.min.js"></script>
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/js/all.min.js"></script>
+      <script src="app.js"></script>
+    </div>
+  </body>
+</html>
